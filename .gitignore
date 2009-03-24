@@ -1,0 +1,59 @@
+appjet-goodcrush
+camera
+contact_finder
+distributed_map
+ec2
+email
+entangled
+escape
+euler
+eventparser
+excel
+facebook
+focus
+fontcomics
+frequency
+gains
+goodcrush
+heartrate
+ivycall
+kman
+labmeeting
+labmeeting-firefox-plugin
+labmeeting-old
+lines
+lmconfig
+overheard
+pi
+project-git
+pygame
+raven
+registerer
+seminarparser
+superresolution
+ubiquity-firefox
+waiter
+webify
+
+# ignore data
+*.data
+*.csv
+*.shelf
+*.xls
+*.doc
+*.pdf
+
+#compiled python files
+*.pyc
+
+#for vim files
+*.swp
+
+#for emacs files?
+*~
+*.cache
+*#*
+
+#for some other editor?
+*.DS_Store
+
