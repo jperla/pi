@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>Ivy Pi Memorizer</title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />	
+	<meta http-equiv="imagetoolbar" content="no" />
+	<link href="sd-stylesheet.css" rel="stylesheet" type="text/css" />
+    <script src="jquery-1.2.3.min.js"></script>
+    <script>
+        $$(document).ready(function() {
+            $$('.hidden-number').mouseover(function() { 
+                $$(this).toggleClass('hidden-number') 
+                $$(this).toggleClass('shown-number') 
+            });
+            $$('.hidden-number').mouseout(function() { 
+                $$(this).toggleClass('shown-number');
+                $$(this).toggleClass('hidden-number') 
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<h1>Ivy Pi Memorizer</h1>
+		</div>
+		
+        <!--
+		<ul id="nav">
+				<li><a href="#index">home</a></li>
+				<li><a href="#idea">the idea</a></li>
+				<li><a href="#code">the code</a></li>
+				<li><a href="#author">the author</a></li>
+				<li><a href="#contact">contact</a></li>
+		</ul>
+        -->
+		
+		<div id="content">
+            <h1>Ivy Pi Memorizer</h1>
+            <p id="instructions">
+                <strong>Instructions</strong>:
+                <ul>
+                    <li>
+                        <u>Associate words with numbers</u>.  
+                        Take any word. For each hard consonant sound in the word, <a href="http://www.fourhourworkweek.com/blog/2007/09/05/savant-school-how-to-memorize-10000-numbers-and-more/">associate a digit to that sound</a>.  Ignore the vowel sounds.  Use the key below.  
+                        So, FAN becomes 82, SOAP 09, MUG 37, and NINETIETH 2211.
+                    </li>
+                    <li>
+                        <u>Associate the digits of pi with a list of words</u>.  [3.]1415 926 becomes TREADWHEEL BANJO.  Or, just use the long list of words I made for you below.
+                    </li>
+                    <li>
+                        <u>Memorize the list of words in order</u>, for example, memorize the list of words below.
+                    </li>
+                    <li>
+                        <u>Make a story</u> with the words, in order.  Make it wacky.  The more offbeat, the easier to remember.  <strong>Imagine the story vividly</strong>.
+                        (Or use the <a href="http://en.wikipedia.org/wiki/Method_of_loci">method of loci</a>).
+                    </li>
+                    </li>
+                    <li>
+                        <u>Recite pi</u>: simply remember the words in order, then translate each word into the corresponding digits.
+                    </li>
+                </ul>
+                Once you've learned enough, have someone quiz you.  You don't need to be fast at first.  You will learn faster and recite faster as you learn and get practice with the key.
+            </p>
+            <hr />
+            <div>
+                <strong>Key</strong>:
+<table id="key">
+<tr>
+<strong>
+<td width="30%">
+Sounds
+</td><td width="30%">
+Translates to digit
+</td><td width="30%">
+Memory tip
+</td>
+</strong>
+</tr>
+<tr>
+<td>z, s, soft c</td><td>0</td><td>(0 signifies "zero") (Ex: Zipper, Scarf, iCe)</td>
+</tr><tr>
+<td>t (also th) or d</td><td>1</td><td>(single downstroke)</td>
+</tr><tr>
+<td>n</td><td>2</td><td>(two downstrokes)</td>
+</tr><tr>
+<td>m</td><td>3</td><td>(three downstrokes)</td>
+</tr><tr>
+<td>r</td><td>4</td><td>(the last letter of "four" is "r")</td>
+</tr><tr>
+<td>L</td><td>5</td><td>(you have five fingers on your Left hand)</td>
+</tr><tr>
+<td>j, ch, soft g, sh</td><td>6</td><td>("J" is a near mirror-image of "6") (Ex: Jelly, CHips, garaGe, SHoe)</td>
+</tr><tr>
+<td>k, hard g, hard c</td><td>7</td><td>("7" side-by-side with a mirror image form a sideways "K") (Ex: Kite, Goat, Cat)</td>
+</tr><tr>
+<td>f, v, ph</td><td>8</td><td>("8" is similar to the lower-case cursive "f") (Ex: Flame, Vest, graPH)</td>
+</tr><tr>
+<td>p or b</td><td>9</td><td>(9 is a mirror-image of "P")</td>
+</tr>
+</table>
+            </div>
+            <hr />
+            <p id="pip">
+            <strong>PI</strong>: 3.<span id="pi">$pi</span>
+            </p>
+
+            <hr />
+
+<div width="100%">
+    <table class="main" width="100%">
+    <tr>
+    <td width="40%">
+        images to help you remember
+    </td>
+    <td width="30%">
+        the word
+    </td>
+    <td width="30%">
+        the digits of pi (in order)    
+    </td>
+    </tr>
+    <table>
+</div>
+
+<div width="100%">
+    <table class="main" width="100%">
+    <tr>
+    <td width="40%" style="text-align:center;">
+        [images]
+    </td>
+    <td width="30%" class="word">
+        [word]
+    </td>
+    <td width="30%" class="shown-number">
+        3 .
+    </td>
+    </tr>
+    <table>
+</div>
+
+
+            $content
+        </div>
+
+		<div id="footer">
+			<a href="http://www.ivycall.com/">Ivy Call, LLC</a> | Photo credits: click on the little image to see its credit <br />
+			Copyright &copy; 2008 Ivy Call, LLC.  <br />	
+			Design by <a href="http://www.diagnosticdesign.co.uk">Diagnostic Design</a>
+		</div>
+	</div>
+</body>
+</html>
+
